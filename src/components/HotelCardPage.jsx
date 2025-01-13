@@ -6,7 +6,7 @@ function HotelCardPage() {
   const navigate = useNavigate();
   const hotelCards = Array(30).fill(null);
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <div className="flex flex-wrap items-center justify-center gap-4">
         {hotelCards.map((_, index) => {
           return (
@@ -21,7 +21,7 @@ function HotelCardPage() {
           );
         })}
       </div>
-       <div className="mt-6 text-center mb-10">
+      <div className="mt-6 text-center mb-10">
         <div className="text-xl font-semibold">
           Continue Exploring amezing views
         </div>

@@ -4,8 +4,8 @@ import { SiClickup } from "react-icons/si";
 import iconWithService from "../utility/iconsPack";
 function MenuTiles() {
   return (
-    <div className="flex flex-col lg:flex-row mt-10 py-6 items-center">
-      <div className="flex w-[60%] carousel-item relative w-full   overflow-x-scroll items-center">
+    <div className="flex flex-col lg:flex-row mt-10 py-6 items-center w-full justify-between ">
+      <div className="flex md:w-[60%] carousel-item relative w-full   overflow-x-scroll items-center">
         <div className="flex">
           {iconWithService.map((item, index) => {
             return (
@@ -22,7 +22,7 @@ function MenuTiles() {
         </div>
       </div>
 
-      <div className="flex items-center  mb-4 gap-3 ml-4">
+      <div className="flex items-center flex-wrap  mb-4 gap-3 ml-4">
         <div className="w-full border px-8 py-4 rounded-xl flex items-center gap-3">
           <span className="flex text-2xl">
             <MdFilterListAlt />

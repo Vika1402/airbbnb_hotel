@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer3() {
   return (
-    <div className="flex flex-col lg:flex-row justify-between text-gray-600 ">
+    <div className="flex flex-col lg:flex-row justify-between text-gray-600 flex-wrap ">
       <hr className="md:hidden" />
       <ul className="flex flex-col gap-2 py-6">
         <li className="font-bold">Support</li>
