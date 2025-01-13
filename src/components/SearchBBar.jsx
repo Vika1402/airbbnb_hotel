@@ -2,9 +2,9 @@ import React from "react";
 import { CiSearch } from "react-icons/ci";
 function SearchBBar() {
   return (
-    <div>
-      <div className=" transition-all duration-500 hover:bg-gray-200 mt-8 justify-center flex py-1.5 text-sm rounded-full shadow-md hover:shadow-none border-t-2">
-        <div className=" flex w-full justify-between  h-full items-center gap-1 p-1">
+    <div className="">
+      <div className="transition-all duration-500 hover:bg-gray-200 mt-8 justify-center flex py-1.5 text-sm rounded-full shadow-md hover:shadow-none border-t-2">
+        <div className=" flex w-full justify-between  h-full items-center gap-1 p-1 ">
           <div className=" flex flex-col items-start  rounded-full hover:bg-white px-5 lg:px-8 py-3 hover:shadow-md">
             <p>Where</p>
             <input
