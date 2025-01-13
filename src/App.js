@@ -8,7 +8,7 @@ import HotelDetailsPage from "./pages/HotelDetailsPage";
 
 function App() {
   return (
-    <div className="mx-4 sm:mx-[10%]">
+    <div className="mx-[10%] md:mx-4">
       <Navbar />
       <Routes>
         <Route path="/" element=<Home /> />

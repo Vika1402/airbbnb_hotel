@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer2() {
   return (
-    <div className="flex mt-6 justify-start gap-20 mb-10">
+    <div className="flex mt-6 justify-start gap-20 mb-10 flex-wrap">
       <ul className="flex flex-col gap-3">
         <li>Canmore</li>
         <li>Apartment rentals</li>

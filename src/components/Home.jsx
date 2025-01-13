@@ -8,7 +8,7 @@ import HotelCardPage from "./HotelCardPage";
 function Home() {
   return (
     <>
-      <div className="mt-32">
+      <div className="md:mt-32">
         <SearchBBar />
         <MenuTiles />
         <HotelCardPage />
