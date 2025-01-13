@@ -1,24 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Footer1() {
+  const [service, setService] = useState([
+    "polpuer",
+
+    "  Art&Love",
+    "   Outdoore",
+    "    Mountain",
+    " Beach",
+    " SunShine",
+    "Categories",
+    "Fun ",
+    "   Limited Party",
+    "   New Year",
+  ]);
   return (
     <div>
-      <div className="font-semibold text-2xl">
-        Inspiration for future getaways
-      </div>
-
-      <div className="flex mt-6 ">
-        <ul className="flex space-x-8 flex-wrap">
-          <li>Populer</li>
-          <li>Art&Love</li>
-          <li>Outdoore</li>
-          <li>Mountain</li>
-          <li>Beach</li>
-          <li>SunShine</li>
-          <li>Categories</li>
-          <li>Fun </li>
-          <li>Limited Party</li>
-          <li>New Year</li>
+      <div className="flex mt-6 justify-center flex-col">
+        <div className="font-semibold text-2xl">
+          Inspiration for future getaways
+        </div>
+        <ul className="flex md:space-x-6 flex-wrap gap-2">
+          {service.map((item) => (
+            <li className="px-4 py-2 bg-gray-600 text-white rounded-full mt-2">
+              {item}
+            </li>
+          ))}
         </ul>
       </div>
     </div>

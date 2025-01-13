@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import HotelCard from "./HotelCard";
 import { useNavigate } from "react-router-dom";
 
 function HotelCardPage() {
   const navigate = useNavigate();
-  const hotelCards = Array(12).fill(null);
+  const [addon, setaddon] = useState(12);
+  const hotelCards = Array(addon).fill(null);
   return (
     <div className="flex flex-col ">
       <div className="flex flex-wrap items-center justify-center gap-4">
@@ -26,7 +27,10 @@ function HotelCardPage() {
           Continue Exploring amezing views
         </div>
         <br />
-        <button className="px-6 py-3 bg-gray-800 hover:bg-gray-900 text-white rounded-lg">
+        <button
+          onClick={() => setaddon(addon + 6)}
+          className="px-6 py-3 bg-gray-800 hover:bg-gray-900 text-white rounded-lg"
+        >
           Show More
         </button>
       </div>
