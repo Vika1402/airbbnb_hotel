@@ -1,27 +1,134 @@
-import { 
-  FaUser, FaHeart, FaStar, FaSearch, FaHome, FaCalendarAlt, FaMapMarkerAlt, FaCommentDots, FaShoppingCart, FaBell, 
-  FaRegBookmark, FaSuitcase, FaPlane, FaCar, FaRegSun, FaRegMoon, FaTree, FaLock, FaWallet, FaCheckCircle 
+import {
+  FaUser,
+  FaHeart,
+  FaStar,
+  FaSearch,
+  FaHome,
+  FaCalendarAlt,
+  FaMapMarkerAlt,
+  FaCommentDots,
+  FaShoppingCart,
+  FaBell,
+  FaRegBookmark,
+  FaSuitcase,
+  FaPlane,
+  FaCar,
+  FaRegSun,
+  FaRegMoon,
+  FaTree,
+  FaLock,
+  FaWallet,
+  FaCheckCircle,
 } from "react-icons/fa";
 
-import { 
-  IoMenuOutline, IoSettingsOutline, IoChatbubbleEllipsesOutline, IoKeyOutline, IoArrowForwardOutline, IoArrowBackOutline, 
-  IoArrowUpOutline, IoArrowDownOutline, IoFilterOutline, IoShareOutline, IoLocationOutline, IoAddCircleOutline 
+import {
+  IoMenuOutline,
+  IoSettingsOutline,
+  IoChatbubbleEllipsesOutline,
+  IoKeyOutline,
+  IoArrowForwardOutline,
+  IoArrowBackOutline,
+  IoArrowUpOutline,
+  IoArrowDownOutline,
+  IoFilterOutline,
+  IoShareOutline,
+  IoLocationOutline,
+  IoAddCircleOutline,
 } from "react-icons/io5";
 
-import { 
-  CiGlobe, CiCreditCard1, CiEdit, CiTrash, CiCloudUpload, CiGift, CiBookmarkPlus, CiUserCircle, CiLocationArrow1 
+import {
+  CiGlobe,
+  CiCreditCard1,
+  CiEdit,
+  CiTrash,
+  CiCloudUpload,
+  CiGift,
+  CiBookmarkPlus,
+  CiLocationArrow1,
 } from "react-icons/ci";
 
-import { MdOutlineFlight, MdOutlineHotel, MdOutlineBathtub, MdOutlineKingBed } from "react-icons/md";
+import {
+  MdOutlineFlight,
+  MdOutlineHotel,
+  MdOutlineBathtub,
+  MdOutlineKingBed,
+} from "react-icons/md";
 
-// Add the icons to an array
-const icons = [
-  FaUser, FaHeart, FaStar, FaSearch, FaHome, FaCalendarAlt, FaMapMarkerAlt, FaCommentDots, FaShoppingCart, FaBell,
-  FaRegBookmark, FaSuitcase, FaPlane, FaCar, FaRegSun, FaRegMoon, FaTree, FaLock, FaWallet, FaCheckCircle,
-  IoMenuOutline, IoSettingsOutline, IoChatbubbleEllipsesOutline, IoKeyOutline, IoArrowForwardOutline, IoArrowBackOutline,
-  IoArrowUpOutline, IoArrowDownOutline, IoFilterOutline, IoShareOutline, IoLocationOutline, IoAddCircleOutline,
-  CiGlobe, CiCreditCard1, CiEdit, CiTrash, CiGift, CiBookmarkPlus,  CiLocationArrow1,
-  MdOutlineFlight, MdOutlineHotel, MdOutlineBathtub, MdOutlineKingBed
+// Array of hotel service names
+const hotelServices = [
+  "Room Service",
+  "Concierge",
+  "Spa & Wellness",
+  "Free Breakfast",
+  "Airport Shuttle",
+  "Laundry Service",
+  "Valet Parking",
+  "Car Rental",
+  "Tour Desk",
+  "Free Wi-Fi",
+  "Swimming Pool",
+  "Fitness Center",
+  "Business Center",
+  "Meeting Rooms",
+  "24-Hour Reception",
+  "Pet-Friendly",
+  "Luggage Storage",
+  "Bar",
+  "Restaurant",
+  "Sauna",
+  "Massage Services",
+  "Private Beach",
+  "Golf Course",
+  "Childcare Services",
+  "Event Planning",
 ];
 
-export default icons;
+// Create an array of objects pairing each icon with a hotel service
+const iconWithService = [
+  { icon: FaUser, service: "Room Service" },
+  { icon: FaHeart, service: "Concierge" },
+  { icon: FaStar, service: "Spa & Wellness" },
+  { icon: FaSearch, service: "Free Breakfast" },
+  { icon: FaHome, service: "Airport Shuttle" },
+  { icon: FaCalendarAlt, service: "Laundry Service" },
+  { icon: FaMapMarkerAlt, service: "Valet Parking" },
+  { icon: FaCommentDots, service: "Car Rental" },
+  { icon: FaShoppingCart, service: "Tour Desk" },
+  { icon: FaBell, service: "Free Wi-Fi" },
+  { icon: FaRegBookmark, service: "Swimming Pool" },
+  { icon: FaSuitcase, service: "Fitness Center" },
+  { icon: FaPlane, service: "Business Center" },
+  { icon: FaCar, service: "Meeting Rooms" },
+  { icon: FaRegSun, service: "24-Hour Reception" },
+  { icon: FaRegMoon, service: "Pet-Friendly" },
+  { icon: FaTree, service: "Luggage Storage" },
+  { icon: FaLock, service: "Bar" },
+  { icon: FaWallet, service: "Restaurant" },
+  { icon: FaCheckCircle, service: "Sauna" },
+  { icon: IoMenuOutline, service: "Massage Services" },
+  { icon: IoSettingsOutline, service: "Private Beach" },
+  { icon: IoChatbubbleEllipsesOutline, service: "Golf Course" },
+  { icon: IoKeyOutline, service: "Childcare Services" },
+  { icon: IoArrowForwardOutline, service: "Event Planning" },
+  { icon: IoArrowBackOutline, service: "Room Service" },
+  { icon: IoArrowUpOutline, service: "Concierge" },
+  { icon: IoArrowDownOutline, service: "Spa & Wellness" },
+  { icon: IoFilterOutline, service: "Free Breakfast" },
+  { icon: IoShareOutline, service: "Airport Shuttle" },
+  { icon: IoLocationOutline, service: "Laundry Service" },
+  { icon: IoAddCircleOutline, service: "Valet Parking" },
+  { icon: CiGlobe, service: "Car Rental" },
+  { icon: CiCreditCard1, service: "Tour Desk" },
+  { icon: CiEdit, service: "Free Wi-Fi" },
+  { icon: CiTrash, service: "Swimming Pool" },
+
+  { icon: CiGift, service: "Business Center" },
+  { icon: CiBookmarkPlus, service: "Meeting Rooms" },
+  { icon: CiLocationArrow1, service: "24-Hour Reception" },
+  { icon: MdOutlineFlight, service: "Pet-Friendly" },
+  { icon: MdOutlineHotel, service: "Luggage Storage" },
+  { icon: MdOutlineBathtub, service: "Bar" },
+  { icon: MdOutlineKingBed, service: "Restaurant" },
+];
+
+export default iconWithService;

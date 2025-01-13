@@ -2,7 +2,7 @@ import React from "react";
 import { CiSearch } from "react-icons/ci";
 function SearchBBar() {
   return (
-    <div className="">
+    <div className="hidden ">
       <div className="transition-all duration-500 hover:bg-gray-200 mt-8 justify-center flex py-1.5 text-sm rounded-full shadow-md hover:shadow-none border-t-2">
         <form action="">
           <div className=" flex w-full justify-between  h-full items-center gap-1 p-1 ">

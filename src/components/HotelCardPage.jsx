@@ -21,7 +21,7 @@ function HotelCardPage() {
           );
         })}
       </div>
-      <div className="mt-6 text-center mb-10">
+       <div className="mt-6 text-center mb-10">
         <div className="text-xl font-semibold">
           Continue Exploring amezing views
         </div>

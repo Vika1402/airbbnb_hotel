@@ -1,21 +1,24 @@
 import React from "react";
-import icons from "../utility/iconsPack";
 import { MdFilterListAlt } from "react-icons/md";
 import { SiClickup } from "react-icons/si";
-import { CiCircleChevLeft } from "react-icons/ci";
+import iconWithService from "../utility/iconsPack";
 function MenuTiles() {
   return (
     <div className="flex flex-col lg:flex-row mt-10 py-6 items-center">
       <div className="flex w-[60%] carousel-item relative w-full   overflow-x-scroll items-center">
         <div className="flex">
-          {icons.map((Icon, index) => (
-            <div className="items-center justify-center">
-              <span className="px-6 xl:px-8  text-gray-700">
-                <Icon key={index} size={24} />
-                <span className="text-nowrap">airbnb</span>
-              </span>
-            </div>
-          ))}
+          {iconWithService.map((item, index) => {
+            return (
+              <>
+                <div className=" flex items-center justify-center text-center">
+                  <span className="px-6 xl:px-8  text-gray-700">
+                    <item.icon key={index} size={24} />
+                    <span className="text-nowrap text-sm ">{item.service}</span>
+                  </span>
+                </div>
+              </>
+            );
+          })}
         </div>
       </div>
 
