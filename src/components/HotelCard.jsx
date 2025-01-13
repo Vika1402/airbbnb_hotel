@@ -7,7 +7,7 @@ function HotelCard() {
       <div className="max-w-sm rounded-lg">
         <div className="rounded-lg bg-gray-700">
           <div className="absolute z-10  flex  items-center mt-4 mx-5">
-            <div className="flex justify-between space-x-40">
+            <div className="flex justify-between space-x-16 lg:space-x-40 ">
               <span className="px-6 py-1 bg-white rounded-full shadow-sm text-sm text-nowrap">
                 Guest Favourite
               </span>
