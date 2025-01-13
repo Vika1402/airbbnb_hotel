@@ -16,7 +16,7 @@ function Navbar() {
             window.scrollTo(0, 0);
           }
         }}
-        className="flex text-red-500 font-semibold items-center space-x-2 text-xl mx-8"
+        className="flex text-red-500 font-semibold items-center space-x-2 text-2xl md:text-xl mx-8"
       >
         <span className="sm:block">
           <FaAirbnb />
@@ -29,7 +29,7 @@ function Navbar() {
           <li className="text-gray-600">Experience</li>
         </ul>
       </div>
-      <div className="mx-12">
+      <div className="mr-12">
         <ul className="flex space-x-3 items-center">
           <li className="border border-gray-100 rounded-full px-4 py-1 hover:border-gray-300 hidden md:block">
             Airbnb your home
