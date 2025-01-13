@@ -9,9 +9,12 @@ function MenuTiles() {
       <div className="flex w-[60%] carousel-item relative w-full   overflow-x-scroll items-center">
         <div className="flex">
           {icons.map((Icon, index) => (
-            <span className="px-6 xl:px-8  text-gray-700">
-              <Icon key={index} size={24} />
-            </span>
+            <div className="items-center justify-center">
+              <span className="px-6 xl:px-8  text-gray-700">
+                <Icon key={index} size={24} />
+                <span className="text-nowrap">airbnb</span>
+              </span>
+            </div>
           ))}
         </div>
       </div>

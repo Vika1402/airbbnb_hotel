@@ -6,8 +6,8 @@ import { IoMenuOutline } from "react-icons/io5";
 
 function Navbar() {
   return (
-    <div className="fixed w-full bg-white top-0 z-20 p-4 items-center">
-      <div className="w-[90%] flex justify-between mt-6 text-lg items-center">
+    <div className="fixed w-full bg-white top-0 z-20 p-4 items-center shadow-sm ">
+      <div className="w-[90%] flex justify-between mt-2 text-lg items-center">
         <div className="flex text-red-500 font-semibold items-center space-x-2 text-xl">
           <span className=" sm:block">
             <FaAirbnb />
