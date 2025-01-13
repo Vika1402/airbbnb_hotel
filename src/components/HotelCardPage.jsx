@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 function HotelCardPage() {
   const navigate = useNavigate();
-  const hotelCards = Array(30).fill(null);
+  const hotelCards = Array(12).fill(null);
   return (
     <div className="flex flex-col ">
       <div className="flex flex-wrap items-center justify-center gap-4">

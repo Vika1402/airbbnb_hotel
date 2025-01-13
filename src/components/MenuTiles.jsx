@@ -13,7 +13,7 @@ function MenuTiles() {
                 <div className=" flex items-center justify-center text-center">
                   <span className="px-6 xl:px-8 text-2xl md:text-xl  text-gray-700">
                     <item.icon key={index} />
-                    <span className="text-nowrap text-sm line-clamp-2 ">
+                    <span className=" text-sm line-clamp-1 ">
                       {item.service}
                     </span>
                   </span>
