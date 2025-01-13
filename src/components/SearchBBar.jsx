@@ -5,11 +5,11 @@ function SearchBBar() {
     <div className="w-full hidden md:block">
       <div>
         <form
-          className="transition-all duration-500 hover:bg-gray-200 mt-8 justify-center flex py-1.5 text-sm rounded-full shadow-md hover:shadow-none border-t-2"
+          className="transition-all duration-500 hover:bg-gray-200 mt-8 justify-center flex py-1.5 text-sm rounded-full shadow-md hover:shadow-none border-t-2 lg:text-xl p-2"
           action=""
         >
-          <div className=" flex justify-between items-center gap-2">
-            <div className=" flex flex-col items-start  rounded-full hover:bg-white px-5 lg:px-8 py-3 hover:shadow-md">
+          <div className=" flex justify-between items-center gap-2 w-full">
+            <div className=" flex flex-col items-start  rounded-full hover:bg-white px-8 xl:px-32 py-5 hover:shadow-md">
               <p>Where</p>
               <input
                 type="text"
@@ -20,7 +20,7 @@ function SearchBBar() {
 
             <hr className="bg-gray-400 h-12 w-0.5" />
 
-            <div className=" flex flex-col items-start  rounded-full hover:bg-white px-2 lg:px-4 py-3 hover:shadow-md">
+            <div className=" flex flex-col items-start  rounded-full hover:bg-white px-6 lg:px-8 py-5 hover:shadow-md">
               <p>Check in</p>
               <input
                 type="text"
@@ -30,7 +30,7 @@ function SearchBBar() {
             </div>
             <hr className="bg-gray-400 h-12 w-0.5" />
 
-            <div className=" flex flex-col items-start  rounded-full hover:bg-white px-2 lg:px-4  py-3 hover:shadow-md">
+            <div className=" flex flex-col items-start  rounded-full hover:bg-white px-6 lg:px-8  py-5 hover:shadow-md">
               <p>Ckeck Out</p>
               <input
                 type="text"
@@ -39,7 +39,7 @@ function SearchBBar() {
               />
             </div>
             <hr className="bg-gray-400 h-12 w-0.5" />
-            <div className=" flex  items-center rounded-full hover:bg-white px-2 lg:px-4 lg:py-3 hover:shadow-md">
+            <div className=" flex  items-center rounded-full hover:bg-white px-6 lg:px-8 py-5 hover:shadow-md">
               <div>
                 <p>Who</p>
                 <input

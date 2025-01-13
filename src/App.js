@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import { Routes, Route } from "react-router-dom";
-import Footer1 from "./components/Footer1";
+
 import Footer from "./components/Footer";
 import HotelDetailsPage from "./pages/HotelDetailsPage";
 

@@ -35,11 +35,11 @@ function Navbar() {
             Airbnb your home
           </li>
           <li>
-            <CiGlobe />{" "}
+            <CiGlobe className="text-gray-600 hover:text-red-600" />
           </li>
-          <li className="flex px-4 py-3  bg-slate-300 rounded-full gap-3 items-center ">
+          <li className="flex px-4 py-3  bg-slate-200 hover:bg-slate-300 rounded-full gap-3 items-center ">
             <span>
-              <IoMenuOutline />
+              <IoMenuOutline  className="text-gray-600 hover:text-red-600"/>
             </span>
             <span>
               <FaUser className="bg-gray-400 p-1 text-2xl rounded-full" />
