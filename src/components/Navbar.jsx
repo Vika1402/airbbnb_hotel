@@ -3,11 +3,21 @@ import { FaUser } from "react-icons/fa";
 import { CiGlobe } from "react-icons/ci";
 import { FaAirbnb } from "react-icons/fa";
 import { IoMenuOutline } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
   return (
     <div className="flex justify-between fixed w-full top-0  bg-white z-20 items-center  py-4 ">
-      <div className="flex text-red-500 font-semibold items-center space-x-2 text-xl mx-8">
+      <div
+        onClick={() => {
+          {
+            navigate("/");
+            window.scrollTo(0, 0);
+          }
+        }}
+        className="flex text-red-500 font-semibold items-center space-x-2 text-xl mx-8"
+      >
         <span className="sm:block">
           <FaAirbnb />
         </span>
