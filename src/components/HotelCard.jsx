@@ -4,13 +4,13 @@ import { FaHeart } from "react-icons/fa";
 function HotelCard() {
   return (
     <div>
-      <div className="max-w-72 rounded-lg">
+      <div className="max-w-xl rounded-lg">
         <div className="rounded-lg bg-gray-700">
-          <div className="absolute z-10 mt-3 flex items-center ml-2 space-x-24">
+          <div className="absolute z-10 mt-3 flex items-center ml-2 space-x-3">
             <div className="px-6 py-1 bg-white rounded-full shadow-sm text-sm text-nowrap">
               Guest Favourite
             </div>
-            <div className="text-gray-800">
+            <div className="text-red-500 text-2xl">
               <FaHeart />
             </div>
           </div>

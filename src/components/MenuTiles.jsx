@@ -6,7 +6,7 @@ function MenuTiles() {
   return (
     <div className="flex flex-col lg:flex-row mt-10 py-6 items-center w-full justify-between ">
       <div className="flex md:w-[60%] carousel-item relative w-full   overflow-x-scroll items-center">
-        <div className="flex">
+        <div className="flex border-b border-t py-3 px-6">
           {iconWithService.map((item, index) => {
             return (
               <>
