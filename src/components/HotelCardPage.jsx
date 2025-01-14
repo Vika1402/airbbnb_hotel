@@ -7,11 +7,12 @@ function HotelCardPage() {
   const [addon, setaddon] = useState(12);
   const hotelCards = Array(addon).fill(null);
   return (
-    <div className="flex flex-col ">
-      <div className="flex flex-wrap items-center justify-center gap-4">
+    <div className="flex flex-col">
+      <div className="flex flex-wrap items-center justify-center gap-4 mx-1 xl:mx-32 ">
         {hotelCards.map((_, index) => {
           return (
             <div
+              className="hover:scale-105 hover:shadow-lg duration-500 transition-all mt-6"
               onClick={() => {
                 navigate("/hoteldetails"); // Navigate to the root or your desired route
                 window.scrollTo(0, 0); // Scroll to the top of the page

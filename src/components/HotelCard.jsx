@@ -4,7 +4,7 @@ import { FaHeart } from "react-icons/fa";
 function HotelCard() {
   return (
     <div>
-      <div className="max-w-sm rounded-lg">
+      <div className="max-w-sm">
         <div className="rounded-lg bg-gray-700">
           <div className="absolute z-10  flex  items-center mt-4 mx-5">
             <div className="flex justify-between space-x-16 lg:space-x-40 ">

@@ -5,7 +5,7 @@ function SearchBBar() {
     <div className="w-full hidden md:block">
       <div>
         <form
-          className="transition-all duration-500 hover:bg-gray-200 mt-8 justify-center flex py-1.5 text-sm rounded-full shadow-md hover:shadow-none border-t-2 lg:text-xl p-2"
+          className="transition-all duration-500 hover:bg-gray-200  justify-center flex py-1.5 text-sm rounded-full shadow-md hover:shadow-none border-t-2 lg:text-xl p-2  xl:mx-40"
           action=""
         >
           <div className=" flex justify-between items-center gap-2 w-full">
@@ -48,13 +48,11 @@ function SearchBBar() {
                   className="bg-transparent w-full outline-none text-sm mr-2"
                 />
               </div>
-              <div className="flex bg-red-600 px-3 py-3 rounded-full text-white items-center gap-3 hover:shadow-md">
+              <div className="flex hover:bg-red-600 bg-red-500 px-3 py-3 rounded-full text-white items-center gap-3 hover:shadow-md">
                 <span className="font-bold text-xl">
                   <CiSearch />
                 </span>
-                <button onClick={(e) => e.preventDefault()} className="text-lg">
-                  Search
-                </button>
+              
               </div>
             </div>
           </div>
