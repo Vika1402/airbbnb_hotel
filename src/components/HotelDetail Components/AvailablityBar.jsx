@@ -6,7 +6,7 @@ function AvailablityBar() {
   return (
     <div className="hidden lg:block">
       {" "}
-      <div className="flex gap-2 lg:top-[700px] bg-white flex-col fixed text-sm xl:right-96 xl:mr-10 h-96 w-96 shadow-xl border rounded-xl">
+      <div className="flex gap-2 lg:top-[700px] bg-white flex-col fixed right-20 text-sm xl:right-96 xl:mr-10 h-96 w-96 shadow-xl border rounded-xl">
         <div>
           <div>
             <div className="flex-col justify-between mt-10 mx-10">
