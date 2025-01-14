@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 function Navbar() {
   const navigate = useNavigate();
   return (
-    <div className="flex justify-between fixed w-full top-0  bg-white z-20 items-center  py-4 ">
+    <div className="flex justify-between fixed w-full  top-0  bg-white z-30 items-center py-3 ">
       <div
         onClick={() => {
           {
