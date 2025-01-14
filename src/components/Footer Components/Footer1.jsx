@@ -16,7 +16,7 @@ function Footer1() {
   ]);
   return (
     <div>
-      <div className="flex mt-6 justify-center flex-col">
+      <div className="flex mt-6 justify-center flex-col bottom-0">
         <div className="font-semibold text-2xl">
           Inspiration for future getaways
         </div>
